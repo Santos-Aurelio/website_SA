@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SA Fotografias — histórias, momentos e emoções capturados através da fotografia.">
+  <title>SA Fotografias | Cada imagem conta uma história</title>
+  <link rel="stylesheet" href="website.css">
+  <script src="website.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark">SA</span>
+      <span>SA <b>FOTOGRAFIAS</b></span>
+    </a>
+
+    <button class="menu-btn" id="menu-btn" aria-label="Abrir menu"
+      aria-expanded="false">☰</button>
+
+    <nav id="nav">
+      <a href="#inicio">Início</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contactos" class="nav-contact">Contactar ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-image"></div>
+      <div class="hero-content">
+        <span class="eyebrow">SA FOTOGRAFIAS · ARTE VISUAL</span>
+        <h1>Momentos únicos.<br><em>Memórias eternas.</em></h1>
+        <p>
+          Cada fotografia conta uma história. Capturamos emoções,
+          celebramos momentos e transformamos instantes em recordações.
+        </p>
+        <div class="hero-actions">
+          <a href="#galeria" class="btn btn-gold">Explorar trabalhos ↗</a>
+          <a href="#contactos" class="btn btn-outline">Solicitar sessão</a>
+        </div>
+        <div class="hero-caption">
+          <span class="line"></span> A ARTE DE CAPTURAR O INSTANTE
+        </div>
+      </div>
+      <div class="hero-counter">01 <span>/</span> SA</div>
+    </section>
+
+    <section class="gallery-section section" id="galeria">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <span class="eyebrow">O NOSSO PORTFÓLIO</span>
+            <h2>Histórias em <em>imagens.</em></h2>
+          </div>
+          <p>Uma seleção de momentos, pessoas e histórias capturadas pela lente.</p>
+        </div>
+
+        <div class="filters" aria-label="Filtrar fotografias">
+          <button class="filter active" data-filter="todos">Todos</button>
+          <button class="filter" data-filter="retratos">Retratos</button>
+          <button class="filter" data-filter="eventos">Eventos</button>
+          <button class="filter" data-filter="casamentos">Casamentos</button>
+          <button class="filter" data-filter="natureza">Natureza</button>
+        </div>
+
+        <div class="gallery" id="gallery">
+
+          <article class="photo" data-category="retratos">
+            <button class="photo-open"
+              data-full="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1800&q=85"
+              data-title="Retratos">
+              <img src="imagens/IMG_4359.jpg"
+                alt="Retrato fotográfico de um casal" loading="lazy">
+              <span class="photo-overlay"><span>Retratos</span><b>↗</b></span>
+            </button>
+          </article>
+
+          <article class="photo" data-category="eventos">
+            <button class="photo-open"
+              data-full="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1800&q=85"
+              data-title="Eventos">
+              <img src="imagens/IMG_78931 (27).jpg"
+                alt="Uma noiva" loading="lazy">
+              <span class="photo-overlay"><span>Eventos</span><b>↗</b></span>
+            </button>
+          </article>
+
+          <article class="photo" data-category="casamentos">
+            <button class="photo-open"
+              data-full="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=85"
+              data-title="Casamentos">
+              <img src="imagens/IMG_9645.jpg"
+                alt="Momento de uma cerimónia de casamento" loading="lazy">
+              <span class="photo-overlay"><span>Casamentos</span><b>↗</b></span>
+            </button>
+          </article>
+
+          <article class="photo" data-category="natureza">
+            <button class="photo-open"
+              data-full="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1800&q=85"
+              data-title="Natureza">
+              <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=700&q=80"
+                alt="Paisagem natural ao nascer do sol" loading="lazy">
+              <span class="photo-overlay"><span>Natureza</span><b>↗</b></span>
+            </button>
+          </article>
+
+          <article class="photo" data-category="retratos">
+            <button class="photo-open"
+              data-full="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1800&q=85"
+              data-title="Retratos masculinos">
+              <img src="imagens/LOGO SA - CARTAZ - BRANCO.png"
+                alt="Logotipo" loading="lazy">
+              <span class="photo-overlay"><span>Retratos</span><b>↗</b></span>
+            </button>
+          </article>
+
+          <article class="photo" data-category="eventos">
+            <button class="photo-open"
+              data-full="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1800&q=85"
+              data-title="Eventos e celebrações">
+              <img src="imagens/IMG_9830.jpg"
+                alt="Público num evento com iluminação de palco" loading="lazy">
+              <span class="photo-overlay"><span>Eventos</span><b>↗</b></span>
+            </button>
+          </article>
+
+        </div>
+
+        <p class="gallery-note">
+          As fotografias apresentadas são ilustrativas. Substitui-as pelos
+          trabalhos originais da SA Fotografias.
+        </p>
+      </div>
+    </section>
+
+    <section class="about section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <img
+            src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=1000&q=85"
+            alt="Câmara fotográfica profissional" loading="lazy">
+          <div class="about-stamp">SA<br><span>FOTOGRAFIAS</span></div>
+        </div>
+        <div class="about-text">
+          <span class="eyebrow">A NOSSA IDENTIDADE</span>
+          <h2>Mais do que fotografias, <em>emoções.</em></h2>
+          <p>
+            A SA Fotografias dedica-se a registar momentos especiais
+            através de imagens criativas, expressivas e cheias de significado.
+          </p>
+          <p>
+            Acreditamos que cada pessoa, celebração e instante tem uma
+            história que merece ser recordada.
+          </p>
+          <a href="#contactos" class="text-link">Vamos contar a tua história ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="servicos">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <span class="eyebrow">O QUE FAZEMOS</span>
+            <h2>Serviços <em>fotográficos.</em></h2>
+          </div>
+          <p>Escolhe o tipo de sessão que melhor representa o teu momento.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service">
+            <span class="service-number">01</span>
+            <span class="service-icon">◉</span>
+            <h3>Retratos</h3>
+            <p>Retratos individuais, familiares e sessões pessoais.</p>
+          </article>
+          <article class="service">
+            <span class="service-number">02</span>
+            <span class="service-icon">✦</span>
+            <h3>Eventos</h3>
+            <p>Cobertura fotográfica de festas, cerimónias e celebrações.</p>
+          </article>
+          <article class="service">
+            <span class="service-number">03</span>
+            <span class="service-icon">♡</span>
+            <h3>Casamentos</h3>
+            <p>Registo dos momentos mais especiais de cada união.</p>
+          </article>
+          <article class="service">
+            <span class="service-number">04</span>
+            <span class="service-icon">▧</span>
+            <h3>Marcas e produtos</h3>
+            <p>Imagens para divulgar produtos, negócios e marcas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contactos">
+      <div class="container contact-inner">
+        <span class="eyebrow">VAMOS CONVERSAR</span>
+        <h2>O teu próximo momento<br>merece ser <em>registado.</em></h2>
+        <p>Contacta a SA Fotografias para informações e marcações.</p>
+        <a class="btn btn-gold" id="whatsapp-link"
+          href="#" target="_blank" rel="noopener noreferrer">
+          Contactar pelo WhatsApp ↗
+        </a>
+        <p class="contact-small">Fotografia com identidade. Memórias para sempre.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark">SA</span>
+      <span>SA <b>FOTOGRAFIAS</b></span>
+    </a>
+    <p>© <span id="year"></span> SA Fotografias. Todos os direitos reservados.</p>
+    <a href="#inicio" class="back-top">Voltar ao topo ↑</a>
+  </footer>
+
+  <!-- Janela para ampliar fotografias -->
+  <dialog id="lightbox" class="lightbox">
+    <button class="lightbox-close" id="lightbox-close"
+      aria-label="Fechar fotografia">✕</button>
+    <button class="lightbox-prev" id="lightbox-prev"
+      aria-label="Fotografia anterior">‹</button>
+    <figure>
+      <img id="lightbox-img" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox-next" id="lightbox-next"
+      aria-label="Fotografia seguinte">›</button>
+  </dialog>
+
+</body>
+</html>
